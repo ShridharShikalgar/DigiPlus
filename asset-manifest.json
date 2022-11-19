@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DigiPlus/static/css/main.7d23ade4.css",
+    "main.js": "/DigiPlus/static/js/main.575b8ec8.js",
+    "index.html": "/DigiPlus/index.html",
+    "main.7d23ade4.css.map": "/DigiPlus/static/css/main.7d23ade4.css.map",
+    "main.575b8ec8.js.map": "/DigiPlus/static/js/main.575b8ec8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d23ade4.css",
+    "static/js/main.575b8ec8.js"
+  ]
+}
