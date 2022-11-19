@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+//importing component
+import Navbar from './Components/Navbar'
+//importing pages
+import Home from './Pages/Home'
+import Jobs from './Pages/Jobs'
+import Certificate from './Pages/Certificate'
+import Offerletter from './Pages/Offerletter'
+import Payment from './Pages/Payment'
 
-function App() {
+const App = () => {
+  let component 
+  switch (window.location.pathname) {
+    case "/":
+      component = <Home />
+      break;
+    case "/jobs":
+      component = <Jobs />
+      break;
+    case "/payment":
+      component = <Payment />
+      break;
+    case "/offerletter":
+      component = <Offerletter />
+      break;
+    case "/certificate":
+      component = <Certificate />
+      break;
+
+    default:
+      break;
+  } 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <div>{component}</div>
     </div>
-  );
+  )
 }
 
-export default App;
+
+export default App
